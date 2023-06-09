@@ -1,0 +1,26 @@
+<p>department works!</p>
+
+<div *ngIf="departments.length>0;then list;else NoList"></div>
+
+<ng-template #list>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+               <th>DepartmentId</th>
+                <th>DepartmentName</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let department of departments">
+                <td>{{department.departmentId}}</td>
+                <td>{{department.departmentName}}</td>
+            </tr>
+        </tbody>
+    </table>
+</ng-template>
+<ng-template #NoList>
+
+    <h1>There is no record</h1>
+
+</ng-template>

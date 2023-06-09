@@ -1,0 +1,84 @@
+<p>application-requests works!</p>
+
+<form [formGroup]="applicationrequestForm" (ngSubmit)="AddRequest()">
+
+    
+
+    <div>
+
+      <label for="location">Location:</label>
+
+      <input type="text" id="location" formControlName="location" required>
+
+    </div>
+    <div>
+
+        <label for="reasonForTravelling">reasonForTravelling:</label>
+  
+        <input type="text" id="reasonForTravelling" formControlName="reasonForTravelling" required>
+  
+      </div>
+    
+      <div>
+
+        <label for="departureCity">departureCity:</label>
+  
+        <input type="text" id="departureCity" formControlName="departureCity" required>
+  
+      </div>
+      <div>
+
+        <label for="destinationCity">destinationCity:</label>
+  
+        <input type="text" id="destinationCity" formControlName="destinationCity" required>
+  
+      </div>
+      <div>
+
+        <label for="departureDate">departureDate:</label>
+  
+        <input type="text" id="departureDate" formControlName="departureDate" required>
+  
+      </div>
+
+      <div>
+
+        <label for="durationOfTravel">durationOfTravel:</label>
+  
+        <input type="number" id="durationOfTravel" formControlName="durationOfTravel" required>
+  
+      </div>
+      <div>
+
+        <label for="hotelRequired">hotelRequired:</label>
+  
+        <input type="text" id="hotelRequired" formControlName="hotelRequired" required>
+  
+      </div>
+      <div>
+
+        <label for="mealNeeded">mealNeeded:</label>
+  
+        <input type="text" id="mealNeeded" formControlName="mealNeeded" required>
+  
+      </div>
+      <div>
+
+        <label for="travelMode">travelMode:</label>
+  
+        <input type="text" id="travelMode" formControlName="travelMode" required>
+  
+      </div>
+    
+
+    
+
+    <div>
+
+      <button type="submit">Submit</button>
+
+    </div>
+
+  </form>
+
+ 
